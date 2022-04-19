@@ -1,0 +1,147 @@
+<?php
+   session_start(); //starts the session
+   if($_SESSION['user']){ // checks if the user is logged in  
+   }
+   else{
+      header("location: ../../MVC/View/login.html"); // redirects if user is not logged in
+   }
+   $user = $_SESSION['user']; //assigns user value
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventory Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../../MVC/View/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('images/demo/backgrounds/01.jpg');">
+  <div class="overlay"> 
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row0">
+      <div id="topbar" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div class="fl_left">
+          <ul class="nospace inline pushright">
+            <li><i class="fa fa-phone"></i> +880-168-8901198</li>
+            <li><i class="fa fa-envelope-o"></i>info@bubupharmacy.com</li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </a></li>
+          </ul>
+        </div>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1>Home</h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li><a href="home.html">Home</a></li>
+            <li><a class="drop" href="#">Inventory</a>
+              <ul>
+                <li><a href="inventory.php">View Inventory</a></li>
+                <li><a href="inventoryedit.php">Edit Inventory</a></li>
+              </ul>
+            </li>
+            <!--<li><a class="drop" href="#">Pages</a>
+              <ul>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/inventory.html">Full Width</a></li>
+                <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+              </ul>
+            </li>-->
+            <li><a class="drop" href="#">Order</a>
+              <ul>
+                <li><a href="order.html">Place Order</a></li>
+                <li><a href="orderhistory.php">Order History</a></li>
+              </ul>
+            </li>
+            <li><a href="../../MVC/Controller/logout.php">Logout</a></li>
+          </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <section id="pageintro" class="clear"> 
+        <!-- ################################################################################################ -->
+        <p style="font-size: 50px" class="font-x2 capitalise">Bubu Pharmacy</p>
+        <img src="images/demo/16065770_0_prev_ui.png" style="height: 110px" alt="">
+        <h2 class="font-x3 uppercase">Your Health<br>
+          Our Priority</h2>
+        <!-- <a class="btn" href="#">Nulla nec aliquam!</a>  -->
+        <!-- ################################################################################################ -->
+      </section>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- <div class="wrapper row3">
+  <figure class="container clear center figline"> 
+    <ul class="nospace inline pushright">
+      <li><a href="#"><img src="images/demo/180x50.png" alt=""></a></li>
+      <li><a href="#"><img src="images/demo/180x50.png" alt=""></a></li>
+      <li><a href="#"><img src="images/demo/180x50.png" alt=""></a></li>
+      <li><a href="#"><img src="images/demo/180x50.png" alt=""></a></li>
+      <li><a href="#"><img src="images/demo/180x50.png" alt=""></a></li>
+    </ul>
+  </figure>
+</div> -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">Pharmacy</h6>
+      <address class="btmspace-15">
+      Bubu Pharmacy<br>
+      Liyue Harbour,<br>
+      Liyue<br>
+      Teyvat
+      </address>
+      <ul class="nospace">
+        <li class="btmspace-10"><span class="fa fa-phone"></span> +880-168-8901198</li>
+        <li><span class="fa fa-envelope-o"></span> info@bubupharmacy.com</li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">Bubu Pharmacy</a></p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

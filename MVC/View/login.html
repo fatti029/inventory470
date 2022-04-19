@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventory | Pages | Basic Grid</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../../MVC/View/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('../images/demo/backgrounds/01.png');">
+  <div class="overlay"> 
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row0">
+      <div id="topbar" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div class="wrapper row0">
+      <div id="topbar" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div class="fl_left">
+          <ul class="nospace inline pushright">
+            <li><i class="fa fa-phone"></i> +880-168-8901198</li>
+            <li><i class="fa fa-envelope-o"></i>info@bubupharmacy.com</li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </a></li>
+          </ul>
+        </div>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1>Login</h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <!-- <li><a class="drop" href="#">Inventory</a>
+              <ul>
+                <li><a href="inventory.php">View Inventory</a></li>
+                <li><a href="inventoryedit.html">Edit Inventory</a></li>
+              </ul>
+            </li>
+            <li><a class="drop" href="#">Order</a>
+              <ul>
+                <li><a href="order.html">Place Order</a></li>
+                <li><a href="orderhistory.php">Order History</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div id="breadcrumb" class="clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <form action="../../MVC/Controller/logincheck.php" method="POST">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <!-- Name -->
+                <div class="form-group mb-30">
+                    Username: <input type="text" name="username" required="required"/> <br/>
+                </div>
+              </div>
+            </div>
+
+              <div class="row">
+              <div class="col-sm-12">
+                <!-- Email -->
+                <div class="form-group mb-30">
+                    Password: <input type="password" name="password" required="required" /> <br/>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-transparent" type="submit">Login</button>
+          </form>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear">
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">Pharmacy</h6>
+      <address class="btmspace-15">
+        Bubu Pharmacy<br>
+        Liyue Harbour,<br>
+        Liyue<br>
+        Teyvat
+      </address>
+      <ul class="nospace">
+        <li class="btmspace-10"><span class="fa fa-phone"></span> +880-168-8901198</li>
+        <li><span class="fa fa-envelope-o"></span> info@bubupharmacy.com</li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">Bubu-Pharma</a></p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
